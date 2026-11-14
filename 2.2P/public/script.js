@@ -12,7 +12,6 @@ function show(data) {
   resultEl.textContent = data.error ? 'Error: ' + data.error : data.result;
 }
 
-// GET request, e.g. /add?a=5&b=3
 document.querySelectorAll('button[data-op]').forEach(button => {
   button.addEventListener('click', async () => {
     const { a, b } = getInputs();
@@ -23,7 +22,6 @@ document.querySelectorAll('button[data-op]').forEach(button => {
   });
 });
 
-// POST request with a JSON body
 document.getElementById('post').addEventListener('click', async () => {
   const { a, b } = getInputs();
   const body = { operation: 'add', a, b };
