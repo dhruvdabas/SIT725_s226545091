@@ -30,7 +30,7 @@ The data is kept in memory, so it resets when the server restarts.
 | GET | `/divide?a=20&b=5` | `result: 4` |
 | POST | `/calculate` with body `{"operation":"add","a":5,"b":3}` | `result: 8` |
 
-If a number is missing or not a number, or you divide by zero, the server returns status `400` with an error message.
+If a number is missing or not a number, or you divide by zero, the server returns status `400` with an error message. If a POST request has an invalid JSON body, the server returns `{"error":"Invalid JSON body"}`.
 
 ## How to run
 
@@ -41,6 +41,8 @@ cd 2.2P
 npm install
 npm start
 ```
+
+On Windows PowerShell, if `npm` is blocked by the script execution policy, use `npm.cmd install` and `npm.cmd start` instead.
 
 Then open <http://localhost:3000> in the browser, or call an endpoint directly, for example <http://localhost:3000/add?a=5&b=3>.
 
