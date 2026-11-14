@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIT725 Task 2.2P - Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>SIT725 Task 2.2P – Express Calculator</h1>
+  <p>This page is served from the <code>public</code> folder. The calculation is done on the server through a REST API.</p>
+
+  <div class="card">
+    <input type="number" id="a" placeholder="First number" value="5">
+    <input type="number" id="b" placeholder="Second number" value="3">
+    <div class="buttons">
+      <button data-op="add">Add (+)</button>
+      <button data-op="subtract">Subtract (−)</button>
+      <button data-op="multiply">Multiply (×)</button>
+      <button data-op="divide">Divide (÷)</button>
+      <button id="post">POST /calculate (add)</button>
+    </div>
+    <p>Request: <code id="url">-</code></p>
+    <p>Result: <strong id="result">-</strong></p>
+  </div>
+
+  <h2>Try the endpoints directly</h2>
+  <ul>
+    <li><a href="/hello">/hello</a></li>
+    <li><a href="/add?a=5&b=3">/add?a=5&amp;b=3</a></li>
+    <li><a href="/subtract?a=10&b=4">/subtract?a=10&amp;b=4</a></li>
+    <li><a href="/multiply?a=6&b=7">/multiply?a=6&amp;b=7</a></li>
+    <li><a href="/divide?a=20&b=5">/divide?a=20&amp;b=5</a></li>
+    <li><a href="/things">/things</a></li>
+  </ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
