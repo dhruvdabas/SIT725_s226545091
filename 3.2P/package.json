@@ -1,0 +1,26 @@
+{
+  "name": "sit725-task-3-2p",
+  "version": "1.0.0",
+  "description": "SIT725 Task 3.2P - Express app with Materialize UI and a GET REST endpoint (Plant Care Guide)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhruvdabas/SIT725_s226545091.git"
+  },
+  "keywords": [
+    "Nodejs",
+    "Express",
+    "Materialize",
+    "HTML",
+    "JS",
+    "CSS"
+  ],
+  "author": "Dhruv Dabas",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.22.3"
+  }
+}
