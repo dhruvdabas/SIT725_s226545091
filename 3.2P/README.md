@@ -12,7 +12,7 @@ Following the task sheet, the domain is changed from the practical's kitten card
 - **Materialbox** banner image (click it to zoom)
 - **Cards** with a card reveal showing each plant's care tips
 - The cards are **built at runtime from the REST API** (`GET /api/plants`) using jQuery
-- A **modal** form ("Join the Plant Club"). On submit, the form data is printed in the browser console (as in the practical) and a Materialize toast is shown
+- A **modal** form ("Join the Plant Club"). On submit, the form data is printed in the browser console (as in the practical)
 
 ## REST API
 
@@ -58,5 +58,4 @@ The terminal shows `App listening to: 3000`. Open <http://localhost:3000> for th
 | `02-cards-from-api.jpg` | Plant cards created from the `GET /api/plants` response |
 | `03-card-reveal.jpg` | Card reveal with care tips |
 | `04-modal-form.jpg` | Modal form opened from the button |
-| `05-form-submitted-toast.jpg` | Toast after submitting the form |
-| `06-get-api-plants.jpg` | JSON response of `GET /api/plants` |
+| `05-get-api-plants.jpg` | JSON response of `GET /api/plants` |
