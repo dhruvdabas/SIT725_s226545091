@@ -5,7 +5,6 @@ app.use(express.static(__dirname + '/public'))
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-// Plant data served by the REST API (same shape as the practical's card list)
 const plantList = [
     {
         title: "Monstera",
@@ -27,7 +26,6 @@ const plantList = [
     }
 ]
 
-// GET REST endpoint consumed by the client (public/js/scripts.js)
 app.get('/api/plants', (req, res) => {
     res.json({ statusCode: 200, data: plantList, message: "Success" })
 })

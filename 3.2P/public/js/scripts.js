@@ -24,7 +24,6 @@ const addCards = (items) => {
     });
 }
 
-// Call the GET REST endpoint and build the cards from the response
 const getPlants = () => {
     $.get('/api/plants', (response) => {
         if (response.statusCode === 200) {
